@@ -7,7 +7,9 @@ namespace ReviewOfCSharp
         static void Main(string[] args)
         {
             /* Console.WriteLine("This was your average, " + AverageOfNumbers(getNumbers())); */
-            drawDiamond();
+            // drawDiamond();
+            ChallengeSix(); 
+            
         }
         public static string getNumbers()
         {
@@ -15,7 +17,7 @@ namespace ReviewOfCSharp
             return Console.ReadLine();
         }
         public static decimal AverageOfNumbers(string userNum)
-        {   
+        {
             // converting parameter to an integer
             int arrayLength = Convert.ToInt32(userNum);
             decimal[] averageArray = new decimal[arrayLength];
@@ -60,7 +62,7 @@ namespace ReviewOfCSharp
                     {
                         finalOutput += space;
                     }
-                        
+
                 }
                 if (i < 5)
                 {
@@ -73,10 +75,61 @@ namespace ReviewOfCSharp
                     numberOfAsterisk -= 2;
                 }
                 Console.WriteLine(finalOutput);
-                
+
             }
         }
+        public static int mostRepNumber(int[] arr)
+        {
+            int returnedNumber;
+            int count;
+            int currentNumber;
+            int currentCount;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                currentNumber = arr[i];
+                currentCount = 1;
+
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[j] == currentNumber)
+                    {
+                        currentCount++;
+                    }
+                }
+            }
+        }
+
+
+
+        public static int MaxValue(int[] arr)
+        {
+            int maxValue = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = i + 1; j < arr.Length; j++)
+                {
+                    if (arr[i] > arr[j])
+                    {
+                        maxValue = arr[i];
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            return maxValue;
+        }
     }
+    public static void ChallengeSix()
+    {
+        Console.WriteLine("Please enter your most FAVORITE word");
+        string userInput = Console.ReadLine();
+        string path = @"E:\CodeFellows\401\Lab03-SystemIO\words.txt";
+        if (!File.Exists(path)) { Console.WriteLine("All signs point to NOPE"); }
 
+        File.AppendAllText(path, userInput);
 
+    }
 }

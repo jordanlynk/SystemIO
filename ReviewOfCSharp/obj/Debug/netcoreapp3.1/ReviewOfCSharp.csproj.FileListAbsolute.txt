@@ -1,0 +1,13 @@
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.exe
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.deps.json
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.runtimeconfig.json
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.runtimeconfig.dev.json
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.dll
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\bin\Debug\netcoreapp3.1\ReviewOfCSharp.pdb
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.csprojAssemblyReference.cache
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.AssemblyInfoInputs.cache
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.AssemblyInfo.cs
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.csproj.CoreCompileInputs.cache
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.dll
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.pdb
+C:\Users\zanyg\Documents\codefellows\401\SystemIO\ReviewOfCSharp\obj\Debug\netcoreapp3.1\ReviewOfCSharp.genruntimeconfig.cache

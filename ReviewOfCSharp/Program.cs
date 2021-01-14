@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ReviewOfCSharp
 {
@@ -6,11 +7,16 @@ namespace ReviewOfCSharp
     {
         static void Main(string[] args)
         {
-            /* Console.WriteLine("This was your average, " + AverageOfNumbers(getNumbers())); */
-            // drawDiamond();
-            ChallengeSix(); 
-            
+            Console.WriteLine("This was your average, " + AverageOfNumbers(getNumbers())); 
+            drawDiamond();
+            Console.WriteLine(mostRepNumber(new int[4] { 2, 2, 3, 3 }));
+            int[] practiceArray = new int[] { 12, 34, 1 , 76, 3 };
+            Console.WriteLine(MaxValue(practiceArray));
+            ChallengeSix();
+            ChallengeSeven();
+
         }
+        // challenge 2 
         public static string getNumbers()
         {
             Console.WriteLine("Please enter a number between 2 and 10");
@@ -37,6 +43,7 @@ namespace ReviewOfCSharp
             return Decimal.Divide(sum, arrayLengthAsDecimal);
 
         }
+        // challenge 3
         static void drawDiamond()
         {
             char space = ' ';
@@ -78,10 +85,11 @@ namespace ReviewOfCSharp
 
             }
         }
+        // challenge 4
         public static int mostRepNumber(int[] arr)
         {
-            int returnedNumber;
-            int count;
+            int returnedNumber = 0;
+            int count = 0;
             int currentNumber;
             int currentCount;
 
@@ -97,11 +105,17 @@ namespace ReviewOfCSharp
                         currentCount++;
                     }
                 }
+                if (currentCount > count)
+                {
+                    returnedNumber = currentNumber;
+                    count = currentCount;
+                }
             }
+            return returnedNumber;
         }
 
 
-
+        // challenge 5
         public static int MaxValue(int[] arr)
         {
             int maxValue = 0;
@@ -121,15 +135,28 @@ namespace ReviewOfCSharp
             }
             return maxValue;
         }
-    }
-    public static void ChallengeSix()
-    {
-        Console.WriteLine("Please enter your most FAVORITE word");
-        string userInput = Console.ReadLine();
-        string path = @"E:\CodeFellows\401\Lab03-SystemIO\words.txt";
-        if (!File.Exists(path)) { Console.WriteLine("All signs point to NOPE"); }
 
-        File.AppendAllText(path, userInput);
+        // challenge 6
+        public static void ChallengeSix()
+        {
+            Console.WriteLine("Please enter your most FAVORITE word");
+            string userInput = Console.ReadLine();
+            string path = "../../../words.txt";
+            if (!File.Exists(path)) { Console.WriteLine("All signs point to NOPE"); }
 
+            File.AppendAllText(path, userInput);
+
+        }
+        // challenge 7
+        public static void ChallengeSeven()
+        {
+            string path = @"E:\CodeFellows\401\Lab03-SystemIO\words.txt";
+            string[] lines = File.ReadAllLines(path);
+            foreach (string s in lines)
+            {
+                Console.WriteLine(s);
+            }
+
+        }
     }
 }
